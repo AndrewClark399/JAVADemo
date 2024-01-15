@@ -9,6 +9,7 @@ public class App {
 		int i = 3061234;
 		long lg = 12345678911L;
 		char initial = 'I';
+		char secondary = 'T';
 		String name = "Andrew";
 		float fl = 23.11F;
 		double db = 23.12;
