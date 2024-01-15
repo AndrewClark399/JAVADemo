@@ -11,7 +11,7 @@ public class App {
 		numbers[4] = 262;
 		numbers[5] = 8;
 		numbers[6] = 998;
-		numbers[7] = 7013;
+		numbers[7] = 703;
 		numbers[8] = 3;
 		numbers[9] = 3;
 		System.out.println(numbers[0]);
