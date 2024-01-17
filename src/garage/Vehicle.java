@@ -2,6 +2,7 @@ package garage;
 
 public class Vehicle {
 
+	private String dataName;
 	private int noOfWheels;
 	private String colour;
 	private String travellingLocation;
@@ -10,12 +11,21 @@ public class Vehicle {
 		super();
 	}
 
-	public Vehicle(int noOfWheels, String colour, String travellingLocation) {
+	public Vehicle(String dataName, int noOfWheels, String colour, String travellingLocation) {
 		super();
+		setDataName(dataName);
 		setNoOfWheels(noOfWheels);
 		setColour(colour);
 		setTravellingLocation(travellingLocation);
 
+	}
+
+	public String getDataName() {
+		return dataName;
+	}
+
+	public void setDataName(String dataName) {
+		this.dataName = dataName;
 	}
 
 	public int getNoOfWheels() {
@@ -44,6 +54,7 @@ public class Vehicle {
 
 	public void print() {
 
+		System.out.println("Name: " + dataName);
 		System.out.println("No. Of Wheels: " + noOfWheels);
 		System.out.println("Colour: " + colour);
 		System.out.println("Travelling Location: " + travellingLocation);

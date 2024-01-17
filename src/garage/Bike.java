@@ -7,8 +7,8 @@ public class Bike extends Vehicle {
 		super();
 	}
 
-	public Bike(int noOfWheels, String colour, String travellingLocation, int racingNumber) {
-		super(noOfWheels, colour, travellingLocation);
+	public Bike(String dataName, int noOfWheels, String colour, String travellingLocation, int racingNumber) {
+		super(dataName, noOfWheels, colour, travellingLocation);
 		setRacingNumber(racingNumber);
 	}
 
@@ -20,7 +20,9 @@ public class Bike extends Vehicle {
 		this.racingNumber = racingNumber;
 	}
 
-	public void BikePrint() {
+	@Override
+	public void print() {
+		super.print();
 		System.out.println("Racing Number: " + racingNumber);
 	}
 }

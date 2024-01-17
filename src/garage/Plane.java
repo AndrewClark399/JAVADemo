@@ -7,8 +7,8 @@ public class Plane extends Vehicle {
 		super();
 	}
 
-	public Plane(int noOfWheels, String colour, String travellingLocation, String homeAirport) {
-		super(noOfWheels, colour, travellingLocation);
+	public Plane(String dataName, int noOfWheels, String colour, String travellingLocation, String homeAirport) {
+		super(dataName, noOfWheels, colour, travellingLocation);
 		setHomeAirport(homeAirport);
 	}
 
@@ -20,7 +20,9 @@ public class Plane extends Vehicle {
 		this.homeAirport = homeAirport;
 	}
 
-	public void PlanePrint() {
+	@Override
+	public void print() {
+		super.print();
 		System.out.println("Home Airport: " + homeAirport);
 	}
 }

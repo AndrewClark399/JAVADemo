@@ -8,8 +8,8 @@ public class Car extends Vehicle {
 		super();
 	}
 
-	public Car(int noOfWheels, String colour, String travellingLocation, String bootCapacity) {
-		super(noOfWheels, colour, travellingLocation);
+	public Car(String dataName, int noOfWheels, String colour, String travellingLocation, String bootCapacity) {
+		super(dataName, noOfWheels, colour, travellingLocation);
 		setBootCapacity(bootCapacity);
 	}
 
@@ -21,7 +21,9 @@ public class Car extends Vehicle {
 		this.bootCapacity = bootCapacity;
 	}
 
-	public void CarPrint() {
+	@Override
+	public void print() {
+		super.print();
 		System.out.println("Boot Capacity: " + bootCapacity);
 	}
 }
