@@ -4,13 +4,11 @@ public class Plane extends Vehicle {
 	private String homeAirport;
 
 	public Plane() {
-
+		super();
 	}
 
 	public Plane(int noOfWheels, String colour, String travellingLocation, String homeAirport) {
-		setNoOfWheels(noOfWheels);
-		setColour(colour);
-		setTravellingLocation(travellingLocation);
+		super(noOfWheels, colour, travellingLocation);
 		setHomeAirport(homeAirport);
 	}
 

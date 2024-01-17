@@ -16,9 +16,12 @@ public class App {
 		pp.setCity("New York");
 		pp.setCountry("United States");
 
-		PeopleCharacteristics[] people = { ac, pp };
+		PeopleCharacteristics ss = new PeopleCharacteristics("Sam", 42, "Portsmouth", "United Kingdom");
 
-		// for each cat of cats
+		PeopleCharacteristics sp = new PeopleCharacteristics("Sarah", 51);
+
+		PeopleCharacteristics[] people = { ac, pp, ss, sp };
+
 		for (PeopleCharacteristics person : people) {
 			person.print();
 			person.getAge();
@@ -29,6 +32,8 @@ public class App {
 		ac.setAge(ac.getAge() + 1);
 		ac.print();
 		pp.print();
+		ss.print();
+		sp.print();
 	}
 
 }

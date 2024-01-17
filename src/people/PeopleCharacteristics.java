@@ -7,6 +7,22 @@ public class PeopleCharacteristics {
 	private String city;
 	private String country;
 
+	public PeopleCharacteristics(String name, int age, String city, String country) {
+		setName(name);
+		setAge(age);
+		setCity(city);
+		setCountry(country);
+	}
+
+	public PeopleCharacteristics(String name, int age) {
+		setName(name);
+		setAge(age);
+
+	}
+
+	public PeopleCharacteristics() {
+	}
+
 	public void print() {
 		System.out.println(
 				"Hello, my name is " + name + "," + "I am " + age + "," + "from " + city + "," + "in " + country);
@@ -38,6 +54,7 @@ public class PeopleCharacteristics {
 	}
 
 	public void setCity(String city) {
+
 		this.city = city;
 	}
 
@@ -46,6 +63,11 @@ public class PeopleCharacteristics {
 	}
 
 	public void setCountry(String country) {
+		if (country == "United Kingdom") {
+			this.country = ("The " + country);
+		} else {
+			country = country;
+		}
 		this.country = country;
 	}
 
