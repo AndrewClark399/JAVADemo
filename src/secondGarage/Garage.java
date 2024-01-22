@@ -1,4 +1,4 @@
-package garage;
+package secondGarage;
 
 import java.util.ArrayList;
 
@@ -18,6 +18,17 @@ public class Garage {
 
 	public void removeVehicle(Vehicle vehicle) {
 		vehicles.remove(vehicle);
+
+	}
+
+	public void removeVehicleById(int id) {
+		for (Vehicle vehicle : vehicles) {
+
+			if (id == vehicle.getId()) {
+				vehicles.remove(vehicle);
+				return;
+			}
+		}
 
 	}
 

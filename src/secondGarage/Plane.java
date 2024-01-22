@@ -1,4 +1,4 @@
-package garage;
+package secondGarage;
 
 import java.util.Objects;
 
@@ -9,9 +9,8 @@ public class Plane extends Vehicle {
 		super();
 	}
 
-	public Plane(int id, String dataName, int noOfWheels, String colour, String travellingLocation,
-			String homeAirport) {
-		super(id, dataName, noOfWheels, colour, travellingLocation);
+	public Plane(String dataName, int noOfWheels, String colour, String travellingLocation, String homeAirport) {
+		super(dataName, noOfWheels, colour, travellingLocation);
 		setHomeAirport(homeAirport);
 	}
 

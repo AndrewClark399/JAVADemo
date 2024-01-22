@@ -1,4 +1,4 @@
-package garage;
+package secondGarage;
 
 import java.util.Objects;
 
@@ -9,8 +9,8 @@ public class Bike extends Vehicle {
 		super();
 	}
 
-	public Bike(int id, String dataName, int noOfWheels, String colour, String travellingLocation, int racingNumber) {
-		super(id, dataName, noOfWheels, colour, travellingLocation);
+	public Bike(String dataName, int noOfWheels, String colour, String travellingLocation, int racingNumber) {
+		super(dataName, noOfWheels, colour, travellingLocation);
 		setRacingNumber(racingNumber);
 	}
 
